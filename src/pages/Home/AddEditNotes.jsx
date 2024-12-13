@@ -102,14 +102,14 @@ function AddEditNotes({
         <label className="input-label">TÍTULO</label>
         <input
           type="text"
-          className="text-2xl text-slate-950 outline-none bg-slate-50"
-          placeholder="Ir Para a Academia às 5"
+          className="text-sm sm:text-2xl text-slate-950 outline-none bg-slate-50"
+          placeholder="Digite seu título..."
           value={title}
           onChange={({ target }) => setTitle(target.value)}
         />
       </div>
 
-      <div className="flex flex-col gap-2 mt-4">
+      <div className="flex flex-col gap-2 mt-4 w-52">
         <label className="input-label">CONTEÚDO</label>
         <textarea
           type="text"
@@ -129,7 +129,7 @@ function AddEditNotes({
       {error && <p className="text-red-500 font-medium mt-5 p-3">{error}</p>}
 
       <button
-        className="btn-primary font-medium mt-5 p-3"
+        className="btn-primary font-medium mt-5 p-2 sm:p-3"
         onClick={handleAddNote}
       >
         {type === "edit" ? "Atualizar" : "Adicionar"}

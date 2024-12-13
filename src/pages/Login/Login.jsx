@@ -96,11 +96,11 @@ function Login() {
           </form>
         </div>
 
-        <div className="flex justify-center h-[350px] w-[350px] absolute top-[30%] left-[70%]">
+        <div className="flex justify-center h-[120px] w-[120px] sm:h-[350px] sm:w-[350px] absolute top-[15%] sm:top-[30%] sm:left-[70%]">
           <a href="https://storyset.com/idea">
             <img
               src={notesImg}
-              className="h-[350px] drop-shadow-blue"
+              className="h-[120px] drop-shadow-blue sm:h-[350px]"
               alt="notesImagem"
             />
           </a>

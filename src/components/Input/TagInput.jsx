@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { MdAdd, MdClose } from "react-icons/md";
 
@@ -48,23 +49,23 @@ function TagInput({ tags, setTags }) {
         </div>
       )}
 
-      <div className="flex items-center gap-4 mt-3">
+      <div className="flex items-center gap-1 sm:gap-4 mt-3">
         <input
           type="text"
           value={inputValue}
-          className="text-sm bg-transparent border px-3 py-2 rounded outline-none"
-          placeholder="Adicionar tags"
+          className="text-xs sm:text-sm bg-transparent border px-2 py-1 sm:px-3 sm:py-2 rounded w-16 sm:w-32 outline-none"
+          placeholder="Add tags"
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
         />
 
         <button
-          className="w-8 h-8 flex rounded-[50%] items-center justify-center border border-blue-700 hover:bg-blue-700 hover:border-green-500 hover:border-[2px]"
+          className="w-5 h-5 sm:w-8 sm:h-8 flex rounded-[50%] items-center justify-center border border-blue-700 hover:bg-blue-700 hover:border-green-500 hover:border-[2px]"
           onClick={() => {
             addNewTag();
           }}
         >
-          <MdAdd className="text-2xl text-blue-700 hover:text-slate-300" />
+          <MdAdd className="text-sm sm:text-2xl text-blue-700 hover:text-slate-300" />
         </button>
       </div>
     </div>

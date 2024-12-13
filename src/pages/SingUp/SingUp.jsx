@@ -111,11 +111,11 @@ function SingUp() {
             </p>
           </form>
         </div>
-        <div className="flex justify-center h-[350px] w-[350px] absolute top-[30%] left-[70%]">
+        <div className="flex justify-center h-[350px] w-[350px] absolute top-[13%] sm:top-[30%] sm:left-[70%]">
           <a href="https://storyset.com/idea">
             <img
               src={accountImg}
-              className="h-[350px] drop-shadow-blue"
+              className="h-[120px] sm:h-[350px] drop-shadow-blue"
               alt="notesImagem"
             />
           </a>

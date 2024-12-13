@@ -155,9 +155,9 @@ function Home() {
         handleClearSearch={handleClearSearch}
       />
 
-      <div className="container mx-auto">
+      <div className="container mx-auto w-[460px]">
         {allNotes.length > 0 ? (
-          <div className="grid grid-cols-3 gap-4 mt-8">
+          <div className="grid grid-cols-3 gap-4 mt-8 p-2">
             {allNotes.map((item, index) => (
               <NoteCard
                 key={item._id}
@@ -202,7 +202,7 @@ function Home() {
           },
         }}
         contentLabel=""
-        className="w-[40%] max-h-3/4 bg-white rounded-md mx-auto mt-14 p-5 overflow-hidden"
+        className="w-[70%] sm:w-[40%] max-h-3/4 bg-white rounded-md mx-auto mt-20 sm:mt-14 p-5 overflow-hidden"
       >
         <AddEditNotes
           type={openAddEditModal.type}
