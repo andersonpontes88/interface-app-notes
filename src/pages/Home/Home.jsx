@@ -155,9 +155,9 @@ function Home() {
         handleClearSearch={handleClearSearch}
       />
 
-      <div className="container mx-auto w-[460px]">
+      <div className="container mx-auto">
         {allNotes.length > 0 ? (
-          <div className="grid grid-cols-3 gap-4 mt-8 p-2">
+          <div className="grid grid-cols-3 mt-8 sm:p-0 p-2 sm:gap-3 gap-2">
             {allNotes.map((item, index) => (
               <NoteCard
                 key={item._id}

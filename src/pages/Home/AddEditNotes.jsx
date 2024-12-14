@@ -109,7 +109,7 @@ function AddEditNotes({
         />
       </div>
 
-      <div className="flex flex-col gap-2 mt-4 w-52">
+      <div className="flex flex-col gap-2 mt-4 w-52 sm:w-full">
         <label className="input-label">CONTEÚDO</label>
         <textarea
           type="text"
